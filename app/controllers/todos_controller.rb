@@ -7,6 +7,12 @@ class TodosController < ApplicationController
     json_response(@todos)
   end
 
+  # POST /todos
+  def create
+    @todo = Todo.create!(todo_params)
+    json_response(@todo, :created)
+  end
+
   # GET /todos/:id
   def show
     json_response(@todo)

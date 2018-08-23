@@ -1,5 +1,5 @@
 class TodosController < ApplicationController
- before_action :fetch_todo, only: [:show, :update]
+ before_action :fetch_todo, only: [:show, :update, :destroy]
 
  # GET /todos
   def index
@@ -21,6 +21,12 @@ class TodosController < ApplicationController
   # PUT /todos/:id
   def update
     @todo.update(todo_params)
+    head :no_content
+  end
+
+  # DELETE /todos/:id
+  def destroy
+    @todo.destroy
     head :no_content
   end
 

@@ -1,0 +1,48 @@
+<h1>Items list</h1>
+
+<p>
+  {{link-to "New Item" "items.new" }}
+</p>
+
+{{#if model.length}}
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Todo
+        </th>
+        <th colspan="3">
+          Actions
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each model as |item|}}
+        <tr>
+          <td>
+            {{item.name}}
+          </td>
+          <td>
+            {{item.todo}}
+          </td>
+          <td>
+            {{link-to "Edit" "items.edit" item}}
+          </td>
+          <td>
+            {{link-to "Show" "items.show" item}}
+          </td>
+          <td>
+            <a href="#" {{action "remove" item}}>Remove</a>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{else}}
+  <p id="blankslate">
+    No Items found
+  </p>
+{{/if}}

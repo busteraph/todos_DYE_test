@@ -47,5 +47,10 @@ module.exports = function(environment) {
     // here you can enable a production-specific feature
   }
 
+  if (environment === 'development') {
+     ENV['ember-cli-mirage'] = {
+     enabled: false
+  };
+
   return ENV;
 };

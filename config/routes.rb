@@ -6,5 +6,5 @@ Rails.application.routes.draw do
     end
   end	
 
-  mount_ember_app :EmberTodosDye, to: "/"
+  mount_ember_app :ember_frontend, to: "/"
 end

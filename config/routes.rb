@@ -4,5 +4,7 @@ Rails.application.routes.draw do
     resources :todos do
       resources :items
     end
-  end
+  end	
+
+  mount_ember_app :EmberTodosDye, to: "/"
 end

@@ -1976,6 +1976,10 @@ ember-cli-qunit@^4.3.2:
     ember-cli-babel "^6.11.0"
     ember-qunit "^3.3.2"
 
+ember-cli-rails-addon@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-rails-addon/-/ember-cli-rails-addon-0.10.0.tgz#cf1089aecf08e257b17ddf89650759f6e1f98399"
+
 ember-cli-shims@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ember-cli-shims/-/ember-cli-shims-1.2.0.tgz#0f53aff0aab80b5f29da3a9731bac56169dd941f"

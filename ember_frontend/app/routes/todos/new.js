@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import EmberRouter from '@ember/routing/router';
 import SaveModelMixin from 'ember-frontend/mixins/todos/save-model-mixin';
 
-export default Ember.Route.extend(SaveModelMixin, {
+export default EmberRouter.extend(SaveModelMixin, {
   model: function() {
     return this.store.createRecord('todo');
   }

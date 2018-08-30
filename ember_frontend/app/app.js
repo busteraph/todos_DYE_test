@@ -11,4 +11,9 @@ const App = Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
+//Initialize Rails CSRF
+// loadInitializers(App, 'rails-csrf');
+// import { setCsrfUrl } from 'rails-csrf/config';
+// setCsrfUrl('api/v1/csrf');
+
 export default App;

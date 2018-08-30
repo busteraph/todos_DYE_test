@@ -1,6 +1,6 @@
-import Ember from 'ember';
+import EmberMixin from '@ember/object/mixin';
 
-export default Ember.Mixin.create({
+export default EmberMixin.create({
   actions: {
     save: function() {
       var route = this;
